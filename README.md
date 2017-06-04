@@ -21,9 +21,9 @@ In general, the changes/additions I made were:
 7) Uses a kill button to stop the Photobooth since it runs full screen
 
 
-## Licence
+## License
 
-Unless otherwise specified, everything in this repository is covered by the following licence:
+Unless otherwise specified, everything in this repository is covered by the following license:
 
 [![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
