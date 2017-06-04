@@ -1,8 +1,8 @@
 # The Pi Photobooth
 
-![](photobooth_small.png)
+![](photobooth.png)
 
-This project is based of the All Seeing Pi project by the Raspberry Pi Foundation.
+This project is based off the All Seeing Pi project by the Raspberry Pi Foundation.
 
 In general, the changes/additions I made were:
 
