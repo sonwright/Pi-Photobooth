@@ -2,10 +2,9 @@
 
 ![](photobooth_small.png)
 
-The project is based of the All Seeing Pi project by the Raspberry Pi Foundation.
+This project is based of the All Seeing Pi project by the Raspberry Pi Foundation.
 
 In general, the changes/additions I made were:
-
 
 1) Added in the ability to print the photo to a bluetooth printer
 
