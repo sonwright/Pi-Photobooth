@@ -20,13 +20,13 @@ In general, the changes/additions I made were:
 
 7) Uses a kill button to stop the Photobooth since it runs full screen
 
-
+See the full blog post here for details https://anotherpiblog.blogspot.com/2017/06/raspberry-pi-photobooth-with-bluetooth.html
 ## License
 
 Unless otherwise specified, everything in this repository is covered by the following license:
 
 [![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-***The Pi Photobooth*** by the [Mari DeGrazia](http://anotherpiblog.blogspot.com/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+***The Pi Photobooth*** by [Mari DeGrazia](http://anotherpiblog.blogspot.com/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 Based on a work at https://github.com/raspberrypilearning/the-all-seeing-pi
