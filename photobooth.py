@@ -134,6 +134,7 @@ def print_photo():
     print ("Print photo")
     pp = subprocess.Popen(["obexftp --nopath --noconn --uuid none --bluetooth " +  printer_MAC +  " --channel 4 -p " + output],shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     message =  pp.communicate(input)
+    print (str(message))
     master.config(cursor="")
     top.destroy()
     msg = "failed"
@@ -304,8 +305,9 @@ b1.pack()
 b2.pack()
 b3.pack()
 #b4.pack()
-
-take_picture
+print "about to take picture"
+take_picture()
+print "after take_picture"
 
 Tkinter.mainloop( )
 
