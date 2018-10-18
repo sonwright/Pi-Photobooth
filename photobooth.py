@@ -244,12 +244,12 @@ copyfile('/home/pi/Pi-Photobooth/images/loading.gif', '/home/pi/Pi-Photobooth/im
 
     
 overlay = ""
-next_overlay_btn = Button(23)
-take_pic_btn = Button(11)
+# next_overlay_btn = Button(23)
+# take_pic_btn = Button(11)
 
 
-next_overlay_btn.when_pressed = next_overlay
-take_pic_btn.when_pressed = take_picture
+# next_overlay_btn.when_pressed = next_overlay
+# take_pic_btn.when_pressed = take_picture
 
 camera = PiCamera()
 camera.resolution = (800, 480)
@@ -264,19 +264,19 @@ p = Process(target=start_wii_script)
 p.start()
    
 
-next_overlay_Wii_button = Button(17)
-picture_Wii_button = Button(9)
-prev_overlay_Wii_Button = Button(21)
-newpic_Wii_button = Button(20)
-rem_overlays_Wii_button = Button(16)
-
-newpic_Wii_button.when_pressed = new_picture
-next_overlay_Wii_button.when_pressed = next_overlay
-prev_overlay_Wii_Button.when_pressed = prev_overlay
-picture_Wii_button.when_pressed = take_picture
-
-
-rem_overlays_Wii_button.when_pressed = remove
+# next_overlay_Wii_button = Button(17)
+# picture_Wii_button = Button(9)
+# prev_overlay_Wii_Button = Button(21)
+# newpic_Wii_button = Button(20)
+# rem_overlays_Wii_button = Button(16)
+# 
+# newpic_Wii_button.when_pressed = new_picture
+# next_overlay_Wii_button.when_pressed = next_overlay
+# prev_overlay_Wii_Button.when_pressed = prev_overlay
+# picture_Wii_button.when_pressed = take_picture
+# 
+# 
+# rem_overlays_Wii_button.when_pressed = remove
 master = Tkinter.Tk()
 master.wm_title(subject)
 master.attributes("-fullscreen", True)
@@ -293,6 +293,7 @@ photo3 = Tkinter.PhotoImage(file='/home/pi/Pi-Photobooth/images/button_email.gif
 b1 = Tkinter.Button(master, text="New Picture",command=new_picture,image=photo1)
 b2 = Tkinter.Button(master, text="Print Picture",command=print_photo,image=photo2)
 b3= Tkinter.Button(master, text="Email Picture",command=get_email_address,image=photo3)
+b4 = Tkinter.Button(master, text="Take Picture",command=take_picture)
 
 b1.image = photo1
 b2.image = photo2
@@ -301,7 +302,7 @@ b3.image = photo3
 b1.pack()
 b2.pack()
 b3.pack()
-
+b4.pack()
 
 Tkinter.mainloop( )
 
