@@ -260,8 +260,8 @@ camera.start_preview()
 output = ""
 latest_photo = '/home/pi/Pi-Photobooth/images/latest.gif'
 
-p = Process(target=start_wii_script)
-p.start()
+# p = Process(target=start_wii_script)
+# p.start()
    
 
 # next_overlay_Wii_button = Button(17)
@@ -290,19 +290,22 @@ photo1 = Tkinter.PhotoImage(file='/home/pi/Pi-Photobooth/images/button_new.gif')
 photo2 = Tkinter.PhotoImage(file='/home/pi/Pi-Photobooth/images/button_print.gif')
 photo3 = Tkinter.PhotoImage(file='/home/pi/Pi-Photobooth/images/button_email.gif')
 
-b1 = Tkinter.Button(master, text="New Picture",command=new_picture,image=photo1)
+b1 = Tkinter.Button(master, text="New Picture",command=take_picture,image=photo1)
 b2 = Tkinter.Button(master, text="Print Picture",command=print_photo,image=photo2)
 b3= Tkinter.Button(master, text="Email Picture",command=get_email_address,image=photo3)
-b4 = Tkinter.Button(master, text="Take Picture",command=take_picture)
+#b4 = Tkinter.Button(master, text="Take Picture",command=take_picture, image=photo1)
 
 b1.image = photo1
 b2.image = photo2
 b3.image = photo3
+#b4.image = photo1
 
 b1.pack()
 b2.pack()
 b3.pack()
-b4.pack()
+#b4.pack()
+
+take_picture
 
 Tkinter.mainloop( )
 
