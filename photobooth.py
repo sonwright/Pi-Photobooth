@@ -86,7 +86,7 @@ def take_picture():
     camera.capture(output)
     
     if overlay:
-        output_overlay(output, overlays[current_position])
+        output_overlay(output, overlay="alex_001")
     else:
         output_no_overlay(output)
     size = 400, 400
@@ -245,7 +245,7 @@ copyfile('/home/pi/Pi-Photobooth/images/loading.gif', '/home/pi/Pi-Photobooth/im
 
 # next_overlay_btn = Button(23)
 # take_pic_btn = Button(11)
-
+overlay = ""
 
 # next_overlay_btn.when_pressed = next_overlay
 # take_pic_btn.when_pressed = take_picture
@@ -253,7 +253,7 @@ copyfile('/home/pi/Pi-Photobooth/images/loading.gif', '/home/pi/Pi-Photobooth/im
 camera = PiCamera()
 camera.resolution = (800, 480)
 camera.hflip = True
-overlay = "alex_001"
+
 
 camera.start_preview()
 output = ""
