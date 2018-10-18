@@ -24,10 +24,10 @@ from multiprocessing import Process
 import cwiid
 
 ###############CHANGE ME###########################
-printer_MAC = "C4:30:00:00:7E:41"
-my_email = 'myemail@gmail.com' # must be gmail account. 
-my_email_password = 'strongpassword'
-subject = 'Graduation 2017'
+printer_MAC = "70:2C:1F:25:77:F3"
+my_email = 'sonwright@gmail.com' # must be gmail account. 
+my_email_password = 'StrongPassword'
+subject = 'Alexandra\'s First Luau'
 ####################################################
 
 def start_wii_script():
