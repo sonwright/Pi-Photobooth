@@ -7,7 +7,7 @@ from itertools import cycle
 
 # EDIT THESE VALUES ------------------------
 overlays_dir = "/home/pi/Pi-Photobooth/overlays"
-overlays = ['bald_head','bunny1','bunny2','dog','monster','unicorn','mouth','ears','dog_face','eyes','girl', 'cowboy', 'top', 'pink', 'glassesnose', 'wings', 'moustache', 'angel','sunglasses', 'elvis', 'emo', 'blackhat_sm', 'emo2', 'baseball_sm', 'flowers', 'santa_sm', 'alps_sm', 'mop', 'glasses',""]
+overlays = ['alex_001',""]
 # ------------------------------------------
 
 overlay = overlays[0] # Starting value
