@@ -277,7 +277,7 @@
     </key>
 
     <key>
-	  <default display="@" />                
+	  <default display="@" />
 	  <shifted display="'" />
     </key>
 
@@ -291,7 +291,25 @@
 	  <default display="←" action="left" />                
     </key>
     <key>
-	  <default display="→" action="right" />                
+	  <default display="→" action="right" />
+    </key>
+
+
+</row>
+
+<row>
+
+    <key>
+	  <default display="@yahoo.com" />
+	  <shifted display="@yahoo.com" />
+    </key>
+    <key>
+	  <default display="@hotmail.com" />
+	  <shifted display="@hotmail.com" />
+    </key>
+    <key>
+	  <default display="@gmail.com" />
+	  <shifted display="@gmail.com" />
     </key>
 
 
