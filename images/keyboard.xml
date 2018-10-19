@@ -71,7 +71,7 @@
     </key>
 
     <key fill="true">
-         <default display="Bksp" action="backspace"/>
+         <default display="Backspace" action="backspace"/>
     </key>
 
 
@@ -296,25 +296,25 @@
 
 
 </row>
-
+<!--
 <row>
 
-    <key>
+    <key fill="true">
 	  <default display="@yahoo.com" />
 	  <shifted display="@yahoo.com" />
     </key>
-    <key>
+    <key fill="true">
 	  <default display="@hotmail.com" />
 	  <shifted display="@hotmail.com" />
     </key>
-    <key>
+    <key fill="true">
 	  <default display="@gmail.com" />
 	  <shifted display="@gmail.com" />
     </key>
 
 
 </row>
-
+-->
 </layout>
 
 </keyboard>
