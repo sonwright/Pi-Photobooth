@@ -96,7 +96,7 @@ def take_picture():
     
     gif_img.save(latest_photo, 'gif')
     loadImage(latest_photo)
-    # camera.hflip = True
+    camera.hflip = True
     just_taken = True
 
 def new_picture():
