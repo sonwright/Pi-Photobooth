@@ -80,7 +80,10 @@ def take_picture():
     output = strftime("/home/pi/Pi-Photobooth/photos/image-%d-%m_%H_%M_%S.png", gmtime())
     time.sleep(.3)
     camera.stop_preview()
-    
+
+    #for now hardcode to 5 seconds
+    countdown(5)
+
     remove_overlays(camera)
     camera.hflip = False
     camera.capture(output)
@@ -98,6 +101,29 @@ def take_picture():
     loadImage(latest_photo)
     camera.hflip = True
     just_taken = True
+
+def countdown(camera, countdown1):
+    led_state = False
+    safe_set_led(camera, led_state)
+    
+    for i in range(countdown1):
+        if i < countdown1 - 2:
+            time.sleep(1)
+            led_state = not led_state
+            safe_set_led(camera, led_state)
+        else:
+            for j in range(5):
+                time.sleep(.2)
+                led_state = not led_state
+                safe_set_led(camera, led_state)
+
+
+def safe_set_led(camera, state):
+    try:
+        camera.led = state
+    except:
+        pass
+
 
 def new_picture():
     global overlay  
