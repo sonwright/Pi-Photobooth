@@ -84,24 +84,24 @@ def take_picture():
     remove_overlays(camera)
     camera.hflip = False
     camera.capture(output)
-
+    output_overlay(output, overlay="alex_001")
+    # if overlay:
+    #     output_overlay(output, overlay="alex_001")
+    # else:
+    #     output_no_overlay(output)
+    #
     size = 400, 400
     gif_img = Image.open(output)
     gif_img.thumbnail(size, Image.ANTIALIAS)
     
     gif_img.save(latest_photo, 'gif')
     loadImage(latest_photo)
-    camera.hflip = True
+    # camera.hflip = True
     just_taken = True
-    output_overlay(output, overlay="alex_001")
-    # if overlay:
-    #     output_overlay(output, overlay="alex_001")
-    # else:
-    #     output_no_overlay(output)
 
 def new_picture():
     global overlay  
-    kill_keyboard()
+    kill_keyboard()0
     camera.start_preview()
     time.sleep(1)
     copyfile('/home/pi/Pi-Photobooth/images/loading.gif', '/home/pi/Pi-Photobooth/images/latest.gif')    
