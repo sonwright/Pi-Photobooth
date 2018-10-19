@@ -82,7 +82,7 @@ def take_picture():
     camera.stop_preview()
 
     #for now hardcode to 5 seconds
-    countdown(5)
+    countdown(camera, 5)
 
     remove_overlays(camera)
     camera.hflip = False
