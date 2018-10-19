@@ -84,11 +84,7 @@ def take_picture():
     remove_overlays(camera)
     camera.hflip = False
     camera.capture(output)
-    
-    if overlay:
-        output_overlay(output, overlay="alex_001")
-    else:
-        output_no_overlay(output)
+
     size = 400, 400
     gif_img = Image.open(output)
     gif_img.thumbnail(size, Image.ANTIALIAS)
@@ -97,6 +93,11 @@ def take_picture():
     loadImage(latest_photo)
     camera.hflip = True
     just_taken = True
+    output_overlay(output, overlay="alex_001")
+    # if overlay:
+    #     output_overlay(output, overlay="alex_001")
+    # else:
+    #     output_no_overlay(output)
 
 def new_picture():
     global overlay  
