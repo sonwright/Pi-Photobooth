@@ -59,7 +59,7 @@ def output_overlay(output=None, overlay=None):
     #output_img = Image.open(output).convert('RGBA')
     #overlay_img = ImageOps.mirror(overlay_img)
     # Combine the two and save the image as output
-    background.paste(overlay_img,(0,200),overlay_img)
+    background.paste(overlay_img,(0,350),overlay_img)
     background.save(output)
 
 

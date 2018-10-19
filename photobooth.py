@@ -26,7 +26,7 @@ import cwiid
 ###############CHANGE ME###########################
 printer_MAC = "70:2C:1F:25:77:F3"
 my_email = 'sonwright@gmail.com' # must be gmail account. 
-my_email_password = 'StrongPassword'
+my_email_password = 'dvhsvdnmoerhlgte'
 subject = 'Alexandra\'s First Luau'
 ####################################################
 
@@ -101,7 +101,7 @@ def take_picture():
 
 def new_picture():
     global overlay  
-    kill_keyboard()0
+    kill_keyboard()
     camera.start_preview()
     time.sleep(1)
     copyfile('/home/pi/Pi-Photobooth/images/loading.gif', '/home/pi/Pi-Photobooth/images/latest.gif')    
