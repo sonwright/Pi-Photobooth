@@ -105,8 +105,9 @@ def take_picture():
 def countdown(camera, countdown1):
     led_state = False
     safe_set_led(camera, led_state)
-    
+
     for i in range(countdown1):
+        print ("countdown: " + str(i))
         if i < countdown1 - 2:
             time.sleep(1)
             led_state = not led_state
