@@ -340,11 +340,11 @@ b3.image = photo3
 #b4.image = photo1
 
 b1.pack()
-b1.place(anchor="SW")
+b1.place(anchor="sw")
 b2.pack()
-b2.place(anchor="S")
+b2.place(anchor="s")
 b3.pack()
-b3.place(anchor="SE")
+b3.place(anchor="se")
 #b4.pack()
 print "about to take picture"
 take_picture()
