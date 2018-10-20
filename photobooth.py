@@ -94,7 +94,7 @@ def take_picture():
     # else:
     #     output_no_overlay(output)
     #
-    size = 600, 600
+    size = 400, 400
     gif_img = Image.open(output)
     gif_img.thumbnail(size, Image.ANTIALIAS)
     
