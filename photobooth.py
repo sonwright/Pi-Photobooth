@@ -329,7 +329,7 @@ photo1 = Tkinter.PhotoImage(file='/home/pi/Pi-Photobooth/images/button_new.gif')
 photo2 = Tkinter.PhotoImage(file='/home/pi/Pi-Photobooth/images/button_print.gif')
 photo3 = Tkinter.PhotoImage(file='/home/pi/Pi-Photobooth/images/button_email.gif')
 
-b1 = Tkinter.Button(master, text="New Picture",command=take_picture,side=left, image=photo1)
+b1 = Tkinter.Button(master, text="New Picture",command=take_picture,image=photo1)
 b2 = Tkinter.Button(master, text="Print Picture",command=print_photo,image=photo2)
 b3= Tkinter.Button(master, text="Email Picture",command=get_email_address,image=photo3)
 #b4 = Tkinter.Button(master, text="Take Picture",command=take_picture, image=photo1)
