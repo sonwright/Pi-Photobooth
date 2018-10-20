@@ -322,7 +322,7 @@ master.attributes("-fullscreen", True)
 c = Tkinter.Canvas(master, width=400, height=300)
 
 picture = Tkinter.PhotoImage(file=latest_photo)
-picture2 = c.create_image(200,150,image=picture)
+picture2 = c.create_image(250,200,image=picture)
 c.pack()
 
 photo1 = Tkinter.PhotoImage(file='/home/pi/Pi-Photobooth/images/button_new.gif')
@@ -340,11 +340,11 @@ b3.image = photo3
 #b4.image = photo1
 
 b1.pack()
-b1.place(anchor="sw")
+# b1.place(anchor="sw")
 b2.pack()
-b2.place(anchor="s")
+# b2.place(anchor="s")
 b3.pack()
-b3.place(anchor="se")
+# b3.place(anchor="se")
 #b4.pack()
 print "about to take picture"
 take_picture()
