@@ -79,10 +79,11 @@ def take_picture():
     pygame.mixer.music.play()
     output = strftime("/home/pi/Pi-Photobooth/photos/image-%d-%m_%H_%M_%S.png", gmtime())
     time.sleep(.3)
+    # disable_buttons()
     camera.stop_preview()
 
     #for now hardcode to 5 seconds
-    countdown(camera, 5)
+    # countdown(camera, 5)
 
     remove_overlays(camera)
     camera.hflip = False
@@ -93,7 +94,7 @@ def take_picture():
     # else:
     #     output_no_overlay(output)
     #
-    size = 400, 400
+    size = 600, 600
     gif_img = Image.open(output)
     gif_img.thumbnail(size, Image.ANTIALIAS)
     
@@ -119,6 +120,17 @@ def countdown(camera, countdown1):
                 safe_set_led(camera, led_state)
 
 
+def disable_buttons():
+    print ("Disable buttons")
+    b1.configure(state=DISABLED)
+    b2.configure(state=DISABLED)
+    b3.configure(state=DISABLED)
+
+def enable_buttons():
+    print ("Enable buttons")
+    b1.configure(state=NORMAL)
+    b2.configure(state=NORMAL)
+    b3.configure(state=NORMAL)
 def safe_set_led(camera, state):
     try:
         camera.led = state
@@ -327,9 +339,9 @@ b2.image = photo2
 b3.image = photo3
 #b4.image = photo1
 
-b1.pack()
-b2.pack()
-b3.pack()
+b1.pack(side = LEFT)
+b2.pack(side = BOTTOM)
+b3.pack(side = RIGHT)
 #b4.pack()
 print "about to take picture"
 take_picture()
