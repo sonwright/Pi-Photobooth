@@ -319,7 +319,7 @@ latest_photo = '/home/pi/Pi-Photobooth/images/latest.gif'
 master = Tkinter.Tk()
 master.wm_title(subject)
 master.attributes("-fullscreen", True)
-c = Tkinter.Canvas(master, width=700, height=432)
+c = Tkinter.Canvas(master, width=400, height=300)
 
 picture = Tkinter.PhotoImage(file=latest_photo)
 picture2 = c.create_image(200,150,image=picture)
